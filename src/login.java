@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
-public class login {
+public class login extends JDialog{
     private JTextField textField1;
     private JPasswordField passwordTF;
     private JButton cancelButton;
