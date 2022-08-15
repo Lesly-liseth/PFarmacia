@@ -1,7 +1,9 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.*;
 
+import static java.lang.Class.forName;
 public class productos_crud extends JFrame {
     private JTextField textnombre;
     private JTextField textdescripcion;
@@ -26,15 +28,39 @@ public class productos_crud extends JFrame {
         agregar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                agregar();
             }
         });
         actualizar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                actualizar();
             }
         });
+    }
+
+
+    Connection con;
+    PreparedStatement pst;
+    public void conectar(){
+        //BASE DE DATOS CON CUENTA DE USUARIO CREADA
+        final String DB_URL="jdbc:mysql://localhost/productos?serverTimezone=UTC";
+        final String USERNAME="pame";
+        final String PASSWORD="1234";
+
+        try{
+
+            Connection conn= DriverManager.getConnection(DB_URL,USERNAME,PASSWORD);
+            Statement stmt = conn.createStatement();
+            System.out.println("conexion exitosa");
+
+
+        }
+        catch(SQLException ex){
+            ex.printStackTrace();
+            System.out.println("SQL incorrecto");
+        }
+
     }
 
 
