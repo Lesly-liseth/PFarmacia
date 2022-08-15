@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
@@ -19,13 +20,18 @@ public class productos_crud extends JFrame {
     String id,nombre,descripcion, precio, stock;
     public static void main(String[] args) {
         JFrame frame = new JFrame("productos_crud");
-        frame.setContentPane(new productos_crud().mainPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
+
     }
     public productos_crud() {
+
+        setTitle("Bienvenidos");
+        setContentPane(mainPanel);
+        setMinimumSize(new Dimension(1280, 720));
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setDefaultLookAndFeelDecorated(true);
         conectar();
+
         agregar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

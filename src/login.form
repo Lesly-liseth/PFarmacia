@@ -1,52 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="login">
-  <grid id="27dc6" binding="loginPanel" layout-manager="GridLayoutManager" row-count="5" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="loginPanel" layout-manager="GridLayoutManager" row-count="4" column-count="20" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="669" height="400"/>
+      <xy x="20" y="20" width="702" height="398"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <component id="a77d8" class="javax.swing.JLabel">
+      <component id="7178c" class="javax.swing.JLabel">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="20" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Label"/>
+          <text value="SISTEMA DE REGISTRO DE FARMACIA"/>
         </properties>
       </component>
-      <component id="ac02f" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Label"/>
-        </properties>
-      </component>
-      <component id="68876" class="javax.swing.JLabel">
+      <component id="71aaa" class="javax.swing.JLabel">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font size="24" style="1"/>
-          <foreground color="-6721605"/>
-          <text value="SISTEMA DE FARMACIA"/>
+          <text value="EMAIL"/>
         </properties>
       </component>
-      <component id="8015b" class="javax.swing.JLabel">
+      <component id="cab6e" class="javax.swing.JLabel">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font size="22" style="1"/>
-          <foreground color="-15127621"/>
-          <text value="BIENVENIDOS"/>
+          <text value="CONTRASEÑA"/>
         </properties>
       </component>
-      <component id="dc5bb" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+      <component id="5a54a" class="javax.swing.JTextField" binding="emailTF">
         <constraints>
-          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="1" row-span="1" col-span="19" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -54,9 +42,30 @@
           <background color="-4541253"/>
         </properties>
       </component>
-      <component id="4f9a1" class="javax.swing.JPasswordField" binding="passwordTF">
+      <hspacer id="8dc3">
         <constraints>
-          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="3c1f7" class="javax.swing.JButton" binding="OKButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="8" row-span="1" col-span="9" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="OK"/>
+        </properties>
+      </component>
+      <component id="1b79f" class="javax.swing.JButton" binding="cancelButton">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="CANCEL"/>
+        </properties>
+      </component>
+      <component id="e40ce" class="javax.swing.JPasswordField" binding="passwordTF">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="19" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -64,6 +73,7 @@
           <background color="-4541253"/>
         </properties>
       </component>
+<<<<<<< HEAD
       <component id="ff710" class="javax.swing.JButton" binding="cancelButton" default-binding="true">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -104,6 +114,8 @@
           <text value="Passwork"/>
         </properties>
       </component>
+=======
+>>>>>>> 7309ce77fca11f99d79958447109d5588aadca5c
     </children>
   </grid>
 </form>
