@@ -31,6 +31,10 @@ public class login extends JDialog{
                 System.out.println("boton ok");
                 user=getAuthenticationUser(email,password);
 
+                productos_crud ventana2 = new productos_crud();
+                ventana2.setVisible(true);
+                dispose();
+
                 if (user!=null){
                     dispose();
                 }
@@ -61,8 +65,8 @@ public class login extends JDialog{
         User user =null;
 
         final String DB_URL="jdbc:mysql://localhost/farmacia?serverTimezone=UTC";
-        final String USERNAME="root";
-        final String PASSWORD="";
+        final String USERNAME="pame";
+        final String PASSWORD="1234";
 
 
         try{
