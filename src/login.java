@@ -5,14 +5,14 @@ import java.awt.event.ActionListener;
 import java.sql.*;
 
 public class login extends JDialog{
-    private JTextField textField1;
+    private JTextField emailTF;
     private JPasswordField passwordTF;
     private JButton cancelButton;
     private JButton OKButton;
-    private JLabel emailTF;
     private JPanel loginPanel;
     public User user;
     public login (JFrame parent){
+
         super(parent);
         setTitle("Login");
         setContentPane(loginPanel);
@@ -83,9 +83,9 @@ public class login extends JDialog{
                 user=new User();
                 user.NOMBRE=resultSet.getString("NOMBRE");
                 user.EMAIL=resultSet.getString("EMAIL");
-                user.CELULAR=resultSet.getString("CELULAR");
                 user.DIRECCION=resultSet.getString("DIRECCION");
                 user.CONTRASEÑA=resultSet.getString("CONTRASEÑA");
+                user.CELULAR=resultSet.getString("CELULAR");
             }
 
             stmt.close();
@@ -107,9 +107,9 @@ public class login extends JDialog{
         if(user!=null){
             System.out.println("Autenticacion correcta:"+user.NOMBRE);
             System.out.println("email: "+user.EMAIL);
-            //System.out.println("celular: "+user.celular);
             System.out.println("direccion: "+user.DIRECCION);
             System.out.println("clave: "+user.CONTRASEÑA);
+            System.out.println("celular: "+user.CELULAR);
         }
         else{
             System.out.println("Autenticacion fallida");
