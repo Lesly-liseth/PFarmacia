@@ -1,14 +1,16 @@
 import javax.swing.*;
 
-public class productos_crud {
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JTextField textField4;
-    private JButton ACTUALIZARButton;
-    private JButton ELIMINARButton;
-    private JButton BUCARButton;
-    private JButton LIMPIARButton;
-    private JTextField textField5;
-    private JButton AGREGARButton;
+public class productos_crud extends JFrame{
+    private JTextField textnombre;
+    private JTextField textdescripcion;
+    private JTextField textprecio;
+    private JTextField textStock;
+    private JButton actualizar;
+    private JButton eliminar;
+    private JButton buscarB;
+    private JButton limpiar;
+    private JTextField textid;
+    private JButton agregar;
+
+
 }

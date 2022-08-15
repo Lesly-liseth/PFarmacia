@@ -24,7 +24,7 @@
           <text value="STOCK"/>
         </properties>
       </component>
-      <component id="7833d" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+      <component id="7833d" class="javax.swing.JTextField" binding="textStock">
         <constraints>
           <grid row="5" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -32,7 +32,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="1faf" class="javax.swing.JButton" binding="ACTUALIZARButton" default-binding="true">
+      <component id="1faf" class="javax.swing.JButton" binding="actualizar">
         <constraints>
           <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -40,7 +40,7 @@
           <text value="ACTUALIZAR"/>
         </properties>
       </component>
-      <component id="aabe7" class="javax.swing.JButton" binding="ELIMINARButton" default-binding="true">
+      <component id="aabe7" class="javax.swing.JButton" binding="eliminar">
         <constraints>
           <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -48,7 +48,7 @@
           <text value="ELIMINAR"/>
         </properties>
       </component>
-      <component id="6209e" class="javax.swing.JButton" binding="BUCARButton" default-binding="true">
+      <component id="6209e" class="javax.swing.JButton" binding="buscarB">
         <constraints>
           <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -56,7 +56,7 @@
           <text value="BUCAR"/>
         </properties>
       </component>
-      <component id="7580" class="javax.swing.JButton" binding="LIMPIARButton" default-binding="true">
+      <component id="7580" class="javax.swing.JButton" binding="limpiar">
         <constraints>
           <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -72,7 +72,7 @@
           <text value="ID PRODUCTO"/>
         </properties>
       </component>
-      <component id="7c70c" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+      <component id="7c70c" class="javax.swing.JTextField" binding="textid">
         <constraints>
           <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -80,7 +80,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="f42ef" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+      <component id="f42ef" class="javax.swing.JTextField" binding="textprecio">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -96,7 +96,7 @@
           <text value="PRECIO"/>
         </properties>
       </component>
-      <component id="5a45d" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+      <component id="5a45d" class="javax.swing.JTextField" binding="textdescripcion">
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -112,13 +112,15 @@
           <text value="DESCRIPCIÓN"/>
         </properties>
       </component>
-      <component id="71549" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+      <component id="71549" class="javax.swing.JTextField" binding="textnombre">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value=""/>
+        </properties>
       </component>
       <component id="b3d1d" class="javax.swing.JLabel">
         <constraints>
@@ -128,7 +130,7 @@
           <text value="NOMBRE"/>
         </properties>
       </component>
-      <component id="7f99d" class="javax.swing.JButton" binding="AGREGARButton" default-binding="true">
+      <component id="7f99d" class="javax.swing.JButton" binding="agregar">
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
