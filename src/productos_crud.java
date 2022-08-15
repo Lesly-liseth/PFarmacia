@@ -16,7 +16,7 @@ public class productos_crud extends JFrame {
     private JTextField textid;
     private JButton agregar;
     private JPanel mainPanel;
-
+    String id,nombre,descripcion, precio, stock;
     public static void main(String[] args) {
         JFrame frame = new JFrame("productos_crud");
         frame.setContentPane(new productos_crud().mainPanel);
@@ -63,45 +63,80 @@ public class productos_crud extends JFrame {
         }
 
     }
-    public void agregar(){
+    public void agregar() {
 
-        String id,nombre,descripcion, precio, stock;
         id = textid.getText();
         nombre = textnombre.getText();
         descripcion = textdescripcion.getText();
         precio = textprecio.getText();
         stock = textStock.getText();
 
-        final String DB_URL="jdbc:mysql://localhost/productos?serverTimezone=UTC";
-        final String USERNAME="pame";
-        final String PASSWORD="1234";
+        final String DB_URL = "jdbc:mysql://localhost/productos?serverTimezone=UTC";
+        final String USERNAME = "pame";
+        final String PASSWORD = "1234";
 
-        try{
-            Connection conn= DriverManager.getConnection(DB_URL,USERNAME,PASSWORD);
+        try {
+            Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
             Statement stmt = conn.createStatement();
             String sql = "insert into registro_prod(nombre,descripcion,precio,stock) values (?,?,?,?)";
             pst = conn.prepareStatement(sql);
-            pst.setString(1,nombre);
-            pst.setString(2,descripcion);
-            pst.setString(3,precio);
-            pst.setString(4,stock);
+            pst.setString(1, nombre);
+            pst.setString(2, descripcion);
+            pst.setString(3, precio);
+            pst.setString(4, stock);
             pst.executeUpdate();
 
-            JOptionPane.showMessageDialog(null,"Registro Exitoso");
+            JOptionPane.showMessageDialog(null, "Registro Exitoso");
 
             stmt.close();
             conn.close();
-        }
-        catch (SQLException ex){
+        } catch (SQLException ex) {
 
             ex.printStackTrace();
-            JOptionPane.showMessageDialog(null,"No se pudo registrar");
+            JOptionPane.showMessageDialog(null, "No se pudo registrar");
 
+        }
+    }
+
+        public void actualizar(){
+
+            id = textid.getText();
+            nombre = textnombre.getText();
+            descripcion = textdescripcion.getText();
+            precio = textprecio.getText();
+            stock = textStock.getText();
+
+            final String DB_URL="jdbc:mysql://localhost/productos?serverTimezone=UTC";
+            final String USERNAME="pame";
+            final String PASSWORD="1234";
+
+            try{
+                Connection conn= DriverManager.getConnection(DB_URL,USERNAME,PASSWORD);
+                Statement stmt = conn.createStatement();
+                String sql = "update registro_prod set nombre=?,descripcion=?,precio=?,stock=? where id=?";
+                PreparedStatement pst = conn.prepareStatement(sql);
+
+                pst.setString(1,nombre);
+                pst.setString(2,descripcion);
+                pst.setString(3,precio);
+                pst.setString(4,stock);
+                pst.setString(5,id);
+
+                pst.executeUpdate();
+                JOptionPane.showMessageDialog(null,"Registro Exitoso");
+                stmt.close();
+                conn.close();
+            }
+            catch (SQLException ex){
+
+                ex.printStackTrace();
+                System.out.println("SQL incorrecto");
+
+            }
         }
 
     }
 
 
 
-}
 
