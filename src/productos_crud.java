@@ -38,6 +38,18 @@ public class productos_crud extends JFrame {
                 actualizar();
             }
         });
+        eliminar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        limpiar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                limpiar();
+            }
+        });
     }
 
 
@@ -133,6 +145,14 @@ public class productos_crud extends JFrame {
                 System.out.println("SQL incorrecto");
 
             }
+        }
+        public void limpiar(){
+
+            textnombre.setText("");
+            textdescripcion.setText("");
+            textprecio.setText("");
+            textStock.setText("");
+            textid.setText("");
         }
 
     }
