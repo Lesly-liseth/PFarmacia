@@ -10,6 +10,7 @@ public class login extends JDialog{
     private JButton cancelButton;
     private JButton OKButton;
     private JPanel loginPanel;
+
     public User user;
     public login (JFrame parent){
 
