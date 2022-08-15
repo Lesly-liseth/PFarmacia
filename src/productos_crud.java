@@ -26,7 +26,7 @@ public class productos_crud extends JFrame {
 
         setTitle("Bienvenidos");
         setContentPane(mainPanel);
-        setMinimumSize(new Dimension(1280, 720));
+        setMinimumSize(new Dimension(1000, 600));
         setLocationRelativeTo(null);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setDefaultLookAndFeelDecorated(true);
