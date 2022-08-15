@@ -47,13 +47,21 @@ public class productos_crud extends JFrame {
         eliminar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                eliminar();
             }
         });
         limpiar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 limpiar();
+            }
+        });
+
+
+        buscarB.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                buscar();
             }
         });
     }
@@ -161,7 +169,80 @@ public class productos_crud extends JFrame {
             textid.setText("");
         }
 
+    public void buscar(){
+        String id = "0";
+        id = textid.getText();
+
+        final String DB_URL="jdbc:mysql://localhost/productos?serverTimezone=UTC";
+        final String USERNAME="pame";
+        final String PASSWORD="1234";
+
+        try{
+            Connection conn= DriverManager.getConnection(DB_URL,USERNAME,PASSWORD);
+            Statement stmt = conn.createStatement();
+            String sql = "select * from registro_prod where id=?";
+            PreparedStatement pst = conn.prepareStatement(sql);
+            pst.setString(1,id);
+
+            ResultSet rs = pst.executeQuery();
+
+            if(rs.next()==true){
+                String nombre,descripcion, precio, stock;
+                nombre = rs.getString(2);
+                descripcion=rs.getString(3);
+                precio = rs.getString(4);
+                stock = rs.getString(5);
+
+                textnombre.setText(nombre);
+                textdescripcion.setText(descripcion);
+                textprecio.setText(precio);
+                textStock.setText(stock);
+            }
+            else{
+                //mensaje.setText("No se encontro el producto");
+                JOptionPane.showMessageDialog(null,"No se encontro el producto");
+            }
+
+            stmt.close();
+            conn.close();
+        }
+        catch (SQLException ex){
+
+            ex.printStackTrace();
+            System.out.println("SQL incorrecto");
+
+        }
     }
+
+    public void eliminar(){
+
+        final String DB_URL="jdbc:mysql://localhost/productos?serverTimezone=UTC";
+        final String USERNAME="pame";
+        final String PASSWORD="1234";
+
+        String borrarid = textid.getText();
+        try{
+            Connection conn= DriverManager.getConnection(DB_URL,USERNAME,PASSWORD);
+            Statement stmt = conn.createStatement();
+            String sql = "delete from registro_prod where id=?";
+            PreparedStatement pst = conn.prepareStatement(sql);
+
+            pst.setString(1,borrarid);
+
+            pst.executeUpdate();
+            JOptionPane.showMessageDialog(null,"Registro Borrado");
+            stmt.close();
+            conn.close();
+        }
+        catch (SQLException ex){
+
+            ex.printStackTrace();
+            System.out.println("SQL incorrecto");
+
+        }
+    }
+}
+
 
 
 
