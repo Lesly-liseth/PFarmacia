@@ -31,11 +31,10 @@ public class login extends JDialog{
                 System.out.println("boton ok");
                 user=getAuthenticationUser(email,password);
 
-                productos_crud ventana2 = new productos_crud();
-                ventana2.setVisible(true);
-                dispose();
-
                 if (user!=null){
+
+                    productos_crud ventana2 = new productos_crud();
+                    ventana2.setVisible(true);
                     dispose();
                 }
                 else{
@@ -44,6 +43,8 @@ public class login extends JDialog{
                             "intente nuevamente",
                             JOptionPane.ERROR_MESSAGE
                     );
+                    emailTF.setText("");
+                    passwordTF.setText("");
                 }
 
             }
