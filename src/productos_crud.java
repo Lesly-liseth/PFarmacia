@@ -25,6 +25,7 @@ public class productos_crud extends JFrame {
         frame.setVisible(true);
     }
     public productos_crud() {
+        conectar();
         agregar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -62,6 +63,44 @@ public class productos_crud extends JFrame {
         }
 
     }
+    public void agregar(){
+
+        String id,nombre,descripcion, precio, stock;
+        id = textid.getText();
+        nombre = textnombre.getText();
+        descripcion = textdescripcion.getText();
+        precio = textprecio.getText();
+        stock = textStock.getText();
+
+        final String DB_URL="jdbc:mysql://localhost/productos?serverTimezone=UTC";
+        final String USERNAME="pame";
+        final String PASSWORD="1234";
+
+        try{
+            Connection conn= DriverManager.getConnection(DB_URL,USERNAME,PASSWORD);
+            Statement stmt = conn.createStatement();
+            String sql = "insert into registro_prod(nombre,descripcion,precio,stock) values (?,?,?,?)";
+            pst = conn.prepareStatement(sql);
+            pst.setString(1,nombre);
+            pst.setString(2,descripcion);
+            pst.setString(3,precio);
+            pst.setString(4,stock);
+            pst.executeUpdate();
+
+            JOptionPane.showMessageDialog(null,"Registro Exitoso");
+
+            stmt.close();
+            conn.close();
+        }
+        catch (SQLException ex){
+
+            ex.printStackTrace();
+            JOptionPane.showMessageDialog(null,"No se pudo registrar");
+
+        }
+
+    }
+
 
 
 }
