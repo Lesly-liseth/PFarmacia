@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class productos_crud extends JFrame {
     private JTextField textnombre;
@@ -13,7 +15,6 @@ public class productos_crud extends JFrame {
     private JButton agregar;
     private JPanel mainPanel;
 
-
     public static void main(String[] args) {
         JFrame frame = new JFrame("productos_crud");
         frame.setContentPane(new productos_crud().mainPanel);
@@ -21,5 +22,21 @@ public class productos_crud extends JFrame {
         frame.pack();
         frame.setVisible(true);
     }
+    public productos_crud() {
+        agregar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        actualizar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+    }
+
+
 }
 
