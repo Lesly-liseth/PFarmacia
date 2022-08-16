@@ -24,5 +24,25 @@ Integrantes:
 ![image](https://user-images.githubusercontent.com/85316345/184780561-a08bc854-abc3-4ce8-a635-3e050fd5456e.png)
 11. Resultado de vista de la pantalla login.
 ![WhatsApp Image 2022-08-15 at 8 23 37 PM](https://user-images.githubusercontent.com/85316345/184780614-fb227768-2f10-4824-b2f6-807d753e3581.jpeg)
+12. Creacion de la pantalla productos
+13. Se coloca el nombre en los respectivos apartados para evitar confusion. Colocamos el respectivo nombre al JPanel
+![image](https://user-images.githubusercontent.com/85316345/184781179-3661d0ef-5c2b-40c3-bfb2-6c21ac57aab1.png)
+14. Colocamos laextencion JFrame para su funcionamiento
+![image](https://user-images.githubusercontent.com/85316345/184781347-15edd5f8-8000-42de-b23c-23501e222894.png)
+15. Creamos el main con elrespectivo titulo que va a ser aparicion en la pantalla de productos en cabecera.
+![image](https://user-images.githubusercontent.com/85316345/184781408-3aeca4ab-bf03-4c36-b307-8c2e83b0e34c.png)
+16. Realizamos las respectivas mediciones de la pantalla con su titulo
+![image](https://user-images.githubusercontent.com/85316345/184781476-c6f50e11-e447-4906-a872-97aa5229d50a.png)
+17. Vamos a dar funcionalidad a los correspondientes botones.
+18. Damos funcionalidadal boton agregar 
+![image](https://user-images.githubusercontent.com/85316345/184781588-7ac35511-f9e6-4cdd-b076-003d0625571d.png)
+19. Damos funcionalidadal boton actualizar
+![image](https://user-images.githubusercontent.com/85316345/184781823-65b238f9-4e28-4544-927c-5f65997fcd7b.png)
+20. Damos funcionalidadal boton eliminar
+![image](https://user-images.githubusercontent.com/85316345/184781785-90e6e2c6-99ea-4906-9620-d0749edfc36a.png)
+21. Damos funcionalidadal boton limpiar
+![image](https://user-images.githubusercontent.com/85316345/184781756-eb712a6c-7131-49f8-9156-9a73647d1a4b.png)
+22. Damos funcionalidadal boton buscar
+![image](https://user-images.githubusercontent.com/85316345/184781733-5a9af357-11e0-4dcc-bc57-482785773b26.png)
 
 
