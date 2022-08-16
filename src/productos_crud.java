@@ -68,7 +68,7 @@ public class productos_crud extends JFrame {
     Connection con;
     PreparedStatement pst;
     public void conectar(){
-        
+
         final String DB_URL="jdbc:mysql://localhost/productos?serverTimezone=UTC";
         final String USERNAME="pame";
         final String PASSWORD="1234";
