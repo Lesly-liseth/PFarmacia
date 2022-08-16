@@ -38,7 +38,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-4541253"/>
+        </properties>
       </component>
       <hspacer id="8dc3">
         <constraints>
@@ -67,8 +69,53 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-4541253"/>
+        </properties>
       </component>
+<<<<<<< HEAD
+      <component id="ff710" class="javax.swing.JButton" binding="cancelButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10962245"/>
+          <font size="16" style="1"/>
+          <text value="Cancel"/>
+        </properties>
+      </component>
+      <component id="b85c2" class="javax.swing.JButton" binding="OKButton" custom-create="true">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10962245"/>
+          <font size="16" style="1"/>
+          <text value="Ok"/>
+        </properties>
+      </component>
+      <component id="2ffd6" class="javax.swing.JLabel" binding="emailTF">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3677499"/>
+          <font size="16" style="0"/>
+          <text value="Email: "/>
+        </properties>
+      </component>
+      <component id="dc60f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3677499"/>
+          <font size="16" style="0"/>
+          <text value="Passwork"/>
+        </properties>
+      </component>
+=======
+>>>>>>> 7309ce77fca11f99d79958447109d5588aadca5c
     </children>
   </grid>
 </form>
