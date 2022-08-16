@@ -23,11 +23,8 @@ Integrantes:
 10. Para dar dinamica a nuestro login procedemos a descargar y subir las imagenes.
 ![image](https://user-images.githubusercontent.com/85316345/184780561-a08bc854-abc3-4ce8-a635-3e050fd5456e.png)
 11. Resultado de vista de la pantalla login de cada integrante.
-- [Herrera Lesly]
+![WhatsApp Image 2022-08-15 at 9 19 04 PM](https://user-images.githubusercontent.com/85316345/184784568-13dce1f8-adac-489c-8b3d-1b4a941c778a.jpeg)
 ![WhatsApp Image 2022-08-15 at 9 10 41 PM](https://user-images.githubusercontent.com/85316345/184783655-05337697-dcfb-405e-a5a8-c0e3c522e765.jpeg)
-- [Motoche Nicole]
-
-- [Ñaupari Mayra]
 ![WhatsApp Image 2022-08-15 at 8 23 37 PM](https://user-images.githubusercontent.com/85316345/184780614-fb227768-2f10-4824-b2f6-807d753e3581.jpeg)
 12. Creacion de la pantalla productos
 13. Se coloca el nombre en los respectivos apartados para evitar confusion. Colocamos el respectivo nombre al JPanel
@@ -69,4 +66,9 @@ Integrantes:
 ![WhatsApp Image 2022-08-15 at 8 39 26 PM](https://user-images.githubusercontent.com/85316345/184782099-d5b343cc-037f-49b4-b883-7af8458469d6.jpeg)
 32. Visualizacion de la funcion limpiar
 ![WhatsApp Image 2022-08-15 at 9 11 02 PM](https://user-images.githubusercontent.com/85316345/184783923-c7561766-1c2a-49a9-bbee-6e483e68e2c8.jpeg)
+33. Visualizacion de la funcion buscar
+![WhatsApp Image 2022-08-15 at 9 17 43 PM](https://user-images.githubusercontent.com/85316345/184784447-c74f9024-d177-499f-a755-5c39eb0c00b6.jpeg)
+![WhatsApp Image 2022-08-15 at 9 18 08 PM](https://user-images.githubusercontent.com/85316345/184784469-53abfa55-02da-455d-8bcf-71e73849ef5e.jpeg)
+![WhatsApp Image 2022-08-15 at 9 18 34 PM](https://user-images.githubusercontent.com/85316345/184784489-6c629880-86d9-428b-957b-f57940ee007d.jpeg)
+
 
