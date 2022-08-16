@@ -70,5 +70,6 @@ Integrantes:
 ![WhatsApp Image 2022-08-15 at 9 17 43 PM](https://user-images.githubusercontent.com/85316345/184784447-c74f9024-d177-499f-a755-5c39eb0c00b6.jpeg)
 ![WhatsApp Image 2022-08-15 at 9 18 08 PM](https://user-images.githubusercontent.com/85316345/184784469-53abfa55-02da-455d-8bcf-71e73849ef5e.jpeg)
 ![WhatsApp Image 2022-08-15 at 9 18 34 PM](https://user-images.githubusercontent.com/85316345/184784489-6c629880-86d9-428b-957b-f57940ee007d.jpeg)
-
+34. Script de inserción de datos.
+[scripts.zip](https://github.com/Lesly-liseth/Prueba-2/files/9347526/scripts.zip)
 
