@@ -1,9 +1,9 @@
-# PFarmacia
-  Sistema de registro de productos con CRUD
+## PFarmacia
+Sistema de registro de productos con CRUD
 Integrantes:
-      Herrera Lesly
-      Motoche Nicole
-      Ñaupari Mayra
+ - [Herrera Lesly](https://github.com/Lesly-liseth)
+ - [Motoche Nicole](https://github.com/nicolemotoche29)
+ - [Ñaupari Mayra](https://github.com/maypam22)
 1. Creacion de la base de datos en phpMyAdmin, creacion farmacia con los datos ya agregados.
 ![WhatsApp Image 2022-08-15 at 8 24 59 PM](https://user-images.githubusercontent.com/85316345/184779383-71e7562b-6c84-4881-b44a-6307af48b5e3.jpeg)
 2. Creacion de la pantalla login.
