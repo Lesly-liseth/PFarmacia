@@ -3,6 +3,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
+
+import static com.sun.org.apache.xerces.internal.util.DOMUtil.setVisible;
 import static javax.swing.JDialog.setDefaultLookAndFeelDecorated;
 
 
