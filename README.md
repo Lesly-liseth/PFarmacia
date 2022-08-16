@@ -44,5 +44,10 @@ Integrantes:
 ![image](https://user-images.githubusercontent.com/85316345/184781756-eb712a6c-7131-49f8-9156-9a73647d1a4b.png)
 22. Damos funcionalidadal boton buscar
 ![image](https://user-images.githubusercontent.com/85316345/184781733-5a9af357-11e0-4dcc-bc57-482785773b26.png)
-
+23. Visualizacion de la funcion agregar
+![WhatsApp Image 2022-08-15 at 8 26 55 PM](https://user-images.githubusercontent.com/85316345/184781938-1b8290a3-a564-4770-953b-83a718388b71.jpeg)
+24. Visualizacion de la funcion borrar
+![WhatsApp Image 2022-08-15 at 8 36 12 PM](https://user-images.githubusercontent.com/85316345/184782039-e0de0c2e-5d8a-4d10-a890-42752bb3d052.jpeg)
+25. Visualizacion de la funcion actualizar
+![WhatsApp Image 2022-08-15 at 8 39 26 PM](https://user-images.githubusercontent.com/85316345/184782099-d5b343cc-037f-49b4-b883-7af8458469d6.jpeg)
 
