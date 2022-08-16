@@ -3,10 +3,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
-import static javax.swing.JDialog.setDefaultLookAndFeelDecorated;
 
-
-public class LoginP {
+public class LoginP extends JDialog{
     private JPasswordField passwordTF;
     private JTextField emailTF;
     private JButton OKButton;
@@ -42,7 +40,7 @@ public class LoginP {
                 }
                 else{
                     JOptionPane.showMessageDialog(
-                            login.this,"email o password incorrectos",
+                            LoginP.this,"email o password incorrectos",
                             "intente nuevamente",
                             JOptionPane.ERROR_MESSAGE
                     );
@@ -95,9 +93,9 @@ public class LoginP {
             stmt.close();
             conn.close();
 
-        }catch(Exception e){
+        }catch(Exception ex){
             System.out.println("error de...");
-            e.printStackTrace();
+            ex.printStackTrace();
         }
 
         return user;
@@ -105,8 +103,9 @@ public class LoginP {
 
 
     public static void main(String[] args) {
-        login loginForm=new login(null);
-        User user =loginForm.user;
+        LoginP login=new LoginP(null);
+        User user =login.user;
+        JFrame frame = new JFrame("productos_crud");
 
         if(user!=null){
             System.out.println("Autenticacion correcta:"+user.NOMBRE);
@@ -120,7 +119,5 @@ public class LoginP {
         }
     }
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
+
 }

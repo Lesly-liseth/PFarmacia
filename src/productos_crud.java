@@ -18,10 +18,7 @@ public class productos_crud extends JFrame {
     private JButton agregar;
     private JPanel mainPanel;
     String id,nombre,descripcion, precio, stock;
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("productos_crud");
 
-    }
     public productos_crud() {
 
         setTitle("Bienvenidos");
@@ -35,6 +32,7 @@ public class productos_crud extends JFrame {
         agregar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 agregar();
             }
         });
